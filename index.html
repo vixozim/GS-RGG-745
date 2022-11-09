@@ -432,30 +432,32 @@
 
                             <h3 class="mb-4 text-center text-secondary-white-color poppins" data-aos="fade-up">Contactate con nosotros</h3>
 
-                            <form id="template-contactform" action="sendemail.php" method="post" name="template-contactform" class="contact-form">
+                            <form id="template-contactform" action="https://formsubmit.co/dvisser@vixoz.com" method="post" name="template-contactform" class="contact-form">
 
                                 <div class="row">
                                     
                                     <div class="col-lg-6 col-6">
                                     
 
-                                        <input type="text" name="template-contactform-name" id="template-contactform-first_name" class="form-control bg-light" placeholder="Nombre*" required>
+                                        <input type="text" name="name" id="template-contactform-first_name" class="form-control bg-light" placeholder="Nombre*" required>
                                     </div>
 
                                     <div class="col-lg-6 col-6">
                                      
 
-                                        <input type="email" name="template-contactform-email" id="template-contactform-email"  pattern="[^ @]*@[^ @]*" class="form-control bg-light" placeholder="Email*" required>
+                                        <input type="email" name="email" id="template-contactform-email"  pattern="[^ @]*@[^ @]*" class="form-control bg-light" placeholder="Email*" required>
                                     </div>
 
                                     <div class="col-12 my-4">
                                     
 
-                                        <textarea name="template-contactform-message" rows="6" class="form-control bg-light" id="template-contactform-message" placeholder="Mensaje*" required></textarea>
+                                        <textarea name="message" rows="6" class="form-control bg-light" id="template-contactform-message" placeholder="Mensaje*" required></textarea>
                                         
                                     </div>
 
-                                   
+                                    <input type="hidden" name="_next" value="https://vixozim.github.io/GS-RGG-745/news-detail.html">
+                                    <input type="hidden" name="_subject" value="Contacto desde Sitio Web">
+                                    <input type="hidden" name="_captcha" value="false">
 
                                   
 
@@ -467,24 +469,7 @@
                                     <button type="submit" name="template-contactform-submit" id="template-contactform-submit"  value="submit" class="mx-auto">ENVIAR</button>
                                 </div>
                             </form>
-                            <script type="text/javascript">
-
-                                $("#template-contactform").validate({
-                                    submitHandler: function(form) {
-                                        $('.form-process').fadeIn();
-                                        $(form).ajaxSubmit({
-                                            target: '#contact-form-result',
-                                            success: function() {
-                                                $('.form-process').fadeOut();
-                                                $('#template-contactform').find('.sm-form-control').val('');
-                                                $('#contact-form-result').attr('data-notify-msg', $('#contact-form-result').html()).html('');
-                                                SEMICOLON.widget.notifications($('#contact-form-result'));
-                                            }
-                                        });
-                                    }
-                                });
-                    
-                            </script>
+                            
                         </div>
 
                     </div>
