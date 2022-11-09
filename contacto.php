@@ -16,9 +16,9 @@ $tel = $_POST["tel"];
 $mensaje = $_POST["mensaje"];
 
 // Datos de la cuenta de correo utilizada para enviar vía SMTP
-$smtpHost = "c1900287.ferozo.com";  // Dominio alternativo brindado en el email de alta 
-$smtpUsuario = "no-reply@c1900287.ferozo.com";  // Mi cuenta de correo
-$smtpClave = "cl2ChfzX8n";  // Mi contraseña
+$smtpHost = "c9000451.ferozo.com";  // Dominio alternativo brindado en el email de alta 
+$smtpUsuario = "no-reply@vixoz.com";  // Mi cuenta de correo
+$smtpClave = "9K3CEc*uTvi3";  // Mi contraseña
 
 // Email donde se enviaran los datos cargados en el formulario de contacto
 $emailDestino = "dvisser@vixoz.com";

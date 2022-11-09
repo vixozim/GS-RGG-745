@@ -15,12 +15,13 @@ https://templatemo.com/tm-567-nomad-force
   --section-bg-color:             #f9f9f9;
   --dark-color:                   #2A3249;
   --beige:                        #D6B58C;
-  --beige-oscuro:                 #BF9985; 
+  --beige-oscuro:                 #bf9985; 
   --grey-color:                   #F4EEE9;
   --text-secondary-white-color:   rgba(255, 255, 255, 0.98);
   --title-color:                  #565758;
   --p-color:                      #717275;
   --violeta:                       #ADA1A2;
+  --marron:                          #8a736e;
 
   --body-font-family:           'Open Sans', sans-serif;
 
@@ -31,7 +32,7 @@ https://templatemo.com/tm-567-nomad-force
   --h5-font-size:               24px;
   --h6-font-size:               22px;
   --p-font-size:                15px;
-  --copyright-text-font-size:   14px;
+  --copyright-text-font-size:   11px;
   --custom-link-font-size:      12px;
 
   --font-weight-light:          300;
@@ -41,7 +42,7 @@ https://templatemo.com/tm-567-nomad-force
 }
 
 hr{
-  color: #ADA1A2;
+  color: #3e4c68;
 }
 .bg-blue{
   background-color: #2A3249 !important;
@@ -138,6 +139,9 @@ p {
 .text-beige-oscuro {
   color: var(--beige-oscuro);
 }
+.text-marron {
+  color: var(--marron);
+}
 
 .poppins{
   font-family: 'Poppins', sans-serif;
@@ -153,6 +157,10 @@ p {
 
 .fs-8{
   font-size: 0.7em;
+}
+
+.fs-9{
+  font-size: 0.6em;
 }
 
 a, 
@@ -273,7 +281,7 @@ strong {
   
 }
  .borde {
- padding-top: 50px;
+ padding-top: 40px;
 }
 
 .navbar-nav .nav-link::before {
@@ -398,7 +406,7 @@ strong {
 
 .nav-link {
   
-  padding: 2.5rem 1rem;
+  padding: 1.5rem 1rem;
 }
 /*---------------------------------------
   HERO              
@@ -624,8 +632,25 @@ strong {
 .form-control {
   display: block;
   width: 100%;
-  padding: 1rem 0.75rem;
-  font-size: 0.8rem;
+  padding: 1rem 0.4rem;
+  font-size: 0.6rem;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 5px;
+  line-height: 1.5;
+  background-clip: padding-box;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 8px;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+button {
+  display: block;
+  padding: 1rem 0.4rem;
+  font-size: 0.6rem;
   font-weight: 400;
   letter-spacing: 5px;
   line-height: 1.5;
@@ -687,6 +712,7 @@ strong {
 .copyright-text {
   color: rgba(255, 255, 255, 0.45);
   font-size: var(--copyright-text-font-size);
+ 
 }
 
 /*---------------------------------------

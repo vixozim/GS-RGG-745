@@ -1,8 +1,7 @@
 <?php
 
-//require_once('phpmailer/class.phpmailer.php');
-require("phpmailer/class.phpmailer.php");
-require("phpmailer/class.smtp.php");
+require_once('phpmailer/class.phpmailer.php');
+
 
 $mail = new PHPMailer();
 
@@ -11,16 +10,14 @@ if( isset( $_POST['template-contactform-submit'] ) AND $_POST['template-contactf
 
         $name = $_POST['template-contactform-name'];
         $email = $_POST['template-contactform-email'];
-        $phone = $_POST['template-contactform-phone'];
-       
         $message = $_POST['template-contactform-message'];
 
-        $subject = isset($subject) ? $subject : 'Mensaje desde Sitio Web La Santa Teresita';
+        $subject = isset($subject) ? $subject : 'Mensaje desde Sitio Web Salvador Ruggeri';
 
         $botcheck = $_POST['template-contactform-botcheck'];
 
-        $toemail = 'contacto@lasanta-teresita.com'; // Your Email Address
-        $toname = 'La Santa Teresita'; // Your Name
+        $toemail = 'dvisser@vixoz.com'; // Your Email Address
+        $toname = 'Salvador Ruggeri'; // Your Name
 
         if( $botcheck == '' ) {
 
@@ -31,13 +28,11 @@ if( isset( $_POST['template-contactform-submit'] ) AND $_POST['template-contactf
 
             $name = isset($name) ? "Nombre y Apellido: $name<br><br>" : '';
             $email = isset($email) ? "Email: $email<br><br>" : '';
-            $phone = isset($phone) ? "Teléfono: $phone<br><br>" : '';
-            
-			$message = isset($message) ? "Comentario: $message<br><br>" : '';
+            $message = isset($message) ? "Comentario: $message<br><br>" : '';
 
-            $referrer = $_SERVER['HTTP_REFERER'] ? '<br><br><br>This Form was submitted from: ' . $_SERVER['HTTP_REFERER'] : '';
+            $referrer = $_SERVER['HTTP_REFERER'] ? '<br><br><br>Este Formulario fue Enviado desde: ' . $_SERVER['HTTP_REFERER'] : '';
 
-            $body = "$name $email $phone $message $referrer";
+            $body = "$name $email $message $referrer";
 
             $mail->MsgHTML( $body );
             $sendEmail = $mail->Send();
