@@ -825,6 +825,10 @@ button {
   z-index: -100;
 }
 
+.mt-xs-3{
+  margin-top:1rem!important
+}
+
 }
 
 @media screen and (max-width: 360px) {
