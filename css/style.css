@@ -22,7 +22,7 @@ https://templatemo.com/tm-567-nomad-force
   --p-color:                      #717275;
   --violeta:                       #ADA1A2;
 
-  --body-font-family:           'Noto Sans JP', sans-serif;
+  --body-font-family:           'Open Sans', sans-serif;
 
   --h1-font-size:               72px;
   --h2-font-size:               42px;
@@ -30,7 +30,7 @@ https://templatemo.com/tm-567-nomad-force
   --h4-font-size:               32px;
   --h5-font-size:               24px;
   --h6-font-size:               22px;
-  --p-font-size:                20px;
+  --p-font-size:                15px;
   --copyright-text-font-size:   14px;
   --custom-link-font-size:      12px;
 
@@ -128,7 +128,7 @@ h6 {
 p {
   color: var(--primary-color);
   font-size: var(--p-font-size);
-  font-weight: var(--font-weight-light);
+  font-weight: var(--font-weight-normal);
   letter-spacing: 0.5px;
 }
 
@@ -143,8 +143,12 @@ p {
   font-family: 'Poppins', sans-serif;
 }
 
+.roboto{
+  font-family: 'Roboto', sans-serif;
+}
+
 .fs-7{
-  font-size: 0.85em;
+  font-size: 0.8em;
 }
 
 .fs-8{
@@ -264,8 +268,12 @@ strong {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
+  
+}
+ .borde {
+ padding-top: 50px;
 }
 
 .navbar-nav .nav-link::before {
