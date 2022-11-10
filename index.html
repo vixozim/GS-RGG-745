@@ -153,7 +153,7 @@
                            
                                 <div class="row">
                             <div class="col-lg-6 col-12 mt-3 mb-lg-5 ">
-                                <div class="card">
+                                <div class="card" style="max-width: 266px;">
                                     <div class="card-body">
                                         <div class="row no-gutter">
                                             <div class="col-lg-2 col-2" style="margin-left: -35px;">
@@ -168,7 +168,7 @@
                             </div>
                             </div> 
                             <div class="col-lg-6 col-12 mt-3 mb-lg-5">
-                                <div class="card">
+                                <div class="card" style="max-width: 266px;">
                                     <div class="card-body">
                                         <div class="row no-gutter">
                                             <div class="col-lg-2 col-2" style="margin-left: -35px;">
@@ -184,7 +184,7 @@
                             </div>
                             </div> 
                             <div class="col-lg-6 col-12 mb-lg-5 mt-xs-3">
-                                <div class="card">
+                                <div class="card" style="max-width: 266px;">
                                     <div class="card-body">
                                         <div class="row no-gutter">
                                             <div class="col-lg-2 col-2" style="margin-left: -35px;">
@@ -200,7 +200,7 @@
                             </div>
                             </div> 
                             <div class="col-lg-6 col-12 mb-lg-5 mt-xs-3">
-                                <div class="card">
+                                <div class="card" style="max-width: 266px;">
                                     <div class="card-body">
                                         <div class="row no-gutter">
                                             <div class="col-lg-2 col-2" style="margin-left: -35px;">
@@ -432,26 +432,30 @@
 
                             <h3 class="mb-4 text-center text-secondary-white-color poppins" data-aos="fade-up">Contactate con nosotros</h3>
 
-                            <form id="template-contactform" action="https://formsubmit.co/dvisser@vixoz.com" method="post" name="template-contactform" class="contact-form">
+                            <form id="contact-form" class="form" method="post" action="contact.php" data-toggle="validator">
+                                <div class="messages"></div>
 
                                 <div class="row">
                                     
                                     <div class="col-lg-6 col-6">
                                     
 
-                                        <input type="text" name="name" id="template-contactform-first_name" class="form-control bg-light" placeholder="Nombre*" required>
+                                        <input type="text" name="name" id="form_name" class="form-control bg-light" placeholder="Nombre*" required="required"
+                                        data-error="Nombre es requerido.">
                                     </div>
 
                                     <div class="col-lg-6 col-6">
                                      
 
-                                        <input type="email" name="email" id="template-contactform-email"  pattern="[^ @]*@[^ @]*" class="form-control bg-light" placeholder="Email*" required>
+                                        <input type="email" name="email" id="form-email"  pattern="[^ @]*@[^ @]*" class="form-control bg-light" placeholder="Email*" required="required"
+                                        data-error="Email es Requerido.">
                                     </div>
 
                                     <div class="col-12 my-4">
                                     
 
-                                        <textarea name="message" rows="6" class="form-control bg-light" id="template-contactform-message" placeholder="Mensaje*" required></textarea>
+                                        <textarea name="message" rows="6" class="form-control bg-light" id="form-message" placeholder="Mensaje*" required="required"
+                                        data-error="Mensaje es requerido."></textarea>
                                         
                                     </div>
 
@@ -466,9 +470,11 @@
                                 </div>
 
                                 <div class="col-lg-5 col-12 mx-auto mt-5">
-                                    <button type="submit" name="template-contactform-submit" id="template-contactform-submit"  value="submit" class="mx-auto">ENVIAR</button>
+                                    <button class="mx-auto">ENVIAR</button>
                                 </div>
                             </form>
+
+                            
                             
                         </div>
 
