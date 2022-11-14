@@ -61,9 +61,19 @@ hr{
   background-color:var(--violeta);
 }
 
-
+.bg-dark{
+  background-color: #3C4660 !important;
+}
 .bg-azulado{
   background-color: #5D697C;
+}
+
+.bg-touson{
+  background-color: #BF9985;
+}
+
+.bg-gris{
+  background-color: #F3F3F3;
 }
 
 
@@ -270,6 +280,22 @@ strong {
   padding-top: 100px;
 }
 
+.bg-equipo{
+  background-image: url('../images/bg-equipo.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+.bg-servicios{
+  background-image: url('../images/bg-servicios.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
 
 /*---------------------------------------
   NAVIGATION               
@@ -687,8 +713,8 @@ strong {
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-button {
-  display: block;
+.button {
+  /* display: block; */
   padding: 1rem 0.6rem;
   font-size: 0.6rem;
   font-weight: 400;
@@ -786,6 +812,10 @@ button {
 /*---------------------------------------
   RESPONSIVE STYLES               
 -----------------------------------------*/
+
+.servicios{
+  text-align: center !important;
+}
 @media screen and (min-width: 1600px) {
   .news-two-column {
     min-height: 232.5px;
@@ -867,6 +897,14 @@ button {
 
 .mt-xs-3{
   margin-top:1rem!important
+}
+
+.ms-xs-5{
+  margin-left:1.8rem!important
+}
+
+.servicios{
+  text-align: center;
 }
 
 }

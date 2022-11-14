@@ -127,8 +127,8 @@
                                 apoyándolos en su crecimiento, así como en todos los temas de nuestra incumbencia profesional.</p>
                                 <p class="text-secondary-white-color  text-center mt-4 roboto">Nos especializamos en brindar un servicio integral y de alta calidad en<br>
                                     Argentina, Uruguay, Chile, Brasil, España y USA.</p>
-                                    <div class="col-lg-3 col-12  mt-5" style="margin: auto;">
-                                    <button type="submit" class=" mx-auto">CONOCE EL EQUIPO</button>
+                                    <div class="mt-5 text-center" style="margin: auto;">
+                                    <a href="equipo.html" type="button" class="button mx-auto">CONOCE EL EQUIPO</a>
                                 </div>
                         </div>
 
@@ -326,8 +326,8 @@
                             </div>
                             </div> 
 
-                            <div class="col-lg-3 col-12  mt-3 mb-5" style="margin: auto;">
-                                <button type="submit" class="mx-auto">CONOCER MÁS</button>
+                            <div class="text-center  mt-3 mb-5">
+                                <a href="servicios.html" type="button" class="button mx-auto">CONOCER MÁS</a>
                             </div>
                         </div>
 
@@ -431,7 +431,7 @@
 
                             <h3 class="mb-4 text-center text-secondary-white-color fw-semi-bold poppins" data-aos="fade-up">Contactate con nosotros</h3>
 
-                            <form id="contact-form" class="form" method="post" action="contact.php" data-toggle="validator">
+                            <form id="template-contactform"  class="form" method="post" name="template-contactform" action="sendemail.php">
                                 <div class="messages"></div>
 
                                 <div class="row">
@@ -439,41 +439,32 @@
                                     <div class="col-lg-6 col-6">
                                     
 
-                                        <input type="text" name="name" id="form_name" class="form-control bg-light" placeholder="Nombre*" required="required"
+                                        <input type="text" id="template-contactform-name" placeholder="Nombre *" name="template-contactform-name" class="form-control bg-light"  required="required"
                                         data-error="Nombre es requerido.">
                                     </div>
 
                                     <div class="col-lg-6 col-6">
                                      
 
-                                        <input type="email" name="email" id="form-email"  pattern="[^ @]*@[^ @]*" class="form-control bg-light" placeholder="Email*" required="required"
+                                        <input type="email" id="template-contactform-email" name="template-contactform-email"  pattern="[^ @]*@[^ @]*" class="form-control bg-light" placeholder="Email*" required="required"
                                         data-error="Email es Requerido.">
                                     </div>
 
                                     <div class="col-12 my-4">
                                     
 
-                                        <textarea name="message" rows="6" class="form-control bg-light" id="form-message" placeholder="Mensaje*" required="required"
+                                        <textarea  rows="6" class="form-control bg-light" id="template-contactform-subject"  name="template-contactform-subject" placeholder="Mensaje*" required="required"
                                         data-error="Mensaje es requerido."></textarea>
                                         
                                     </div>
 
-                                    <input type="hidden" name="_next" value="https://vixozim.github.io/GS-RGG-745/news-detail.html">
-                                    <input type="hidden" name="_subject" value="Contacto desde Sitio Web">
-                                    <input type="hidden" name="_captcha" value="false">
-
-                                  
-
-                                   
-
                                 </div>
 
-                                <div class="col-lg-5 col-12 mx-auto mt-5">
-                                    <button class="mx-auto">ENVIAR</button>
+                                <div class="text-center mt-5">
+                                    <button type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit" class="button mx-auto">ENVIAR</button>
                                 </div>
                             </form>
 
-                            
                             
                         </div>
 
