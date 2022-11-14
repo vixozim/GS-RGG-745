@@ -296,7 +296,14 @@ strong {
   padding-bottom: 100px;
   padding-top: 100px;
 }
-
+.bg-contacto{
+  background-image: url('../images/bg-contacto.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
 /*---------------------------------------
   NAVIGATION               
 -----------------------------------------*/
