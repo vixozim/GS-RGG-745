@@ -1693,6 +1693,7 @@ progress{
     opacity:1;
     font-style: italic;
     font-weight: 600;
+    letter-spacing: normal;
 
 }
 .form-control:disabled,.form-control[readonly]{
