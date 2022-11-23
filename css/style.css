@@ -228,7 +228,7 @@ a:hover {
 }
 
 .overlay {
-  background: linear-gradient(to top, #000, transparent 90%);
+  /* background: linear-gradient(to top, #000, transparent 90%); */
   position: absolute;
   top: 0;
   right: 0;
