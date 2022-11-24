@@ -506,6 +506,7 @@ strong {
   .custom-video,
   .news-detail-image {
     object-fit: cover;
+    vertical-align: top;
     width: 100vw;
     height: 100vh;
   }
@@ -716,9 +717,9 @@ strong {
   width: 100%;
   padding: 1rem 0.4rem;
   font-size: 0.6rem;
-  font-style: italic;
+  /* font-style: italic; */
   font-weight: 600;
-  letter-spacing: 5px;
+  letter-spacing: 1px;
   line-height: 1.5;
   background-clip: padding-box;
   border: none;
@@ -750,6 +751,29 @@ strong {
 a[type='button']:hover {
   background: var(--grey-color) !important;
   color: var(--dark-color);
+}
+
+.button2 {
+  /* display: block; */
+  padding: 1rem 0.6rem;
+  font-size: 0.6rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  color: var(--dark-color);
+  background-color: var(--grey-color);
+  background-clip: padding-box;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 8px;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+a[type='button2']:hover {
+  background: var(--beige) !important;
+  color: var(--white-color);
 }
 
 
